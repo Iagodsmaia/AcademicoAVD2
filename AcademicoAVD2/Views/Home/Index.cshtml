@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Início";
+}
+
+<h1>Sistema Acadêmico</h1>
+<p>Bem-vindo ao sistema de gestão acadêmica.</p>
+<div class="row mt-4">
+    <div class="col-md-3">
+        <a asp-controller="Aluno" asp-action="Index" class="btn btn-primary w-100">Alunos</a>
+    </div>
+    <div class="col-md-3">
+        <a asp-controller="Instituicao" asp-action="Index" class="btn btn-secondary w-100">Instituições</a>
+    </div>
+    <div class="col-md-3">
+        <a asp-controller="Departamento" asp-action="Index" class="btn btn-success w-100">Departamentos</a>
+    </div>
+    <div class="col-md-3">
+        <a asp-controller="Curso" asp-action="Index" class="btn btn-info w-100">Cursos</a>
+    </div>
+</div>

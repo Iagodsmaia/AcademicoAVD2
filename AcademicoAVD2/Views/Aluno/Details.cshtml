@@ -1,0 +1,17 @@
+@model AcademicoAVD2.Models.Aluno
+@{ ViewData["Title"] = "Detalhes do Aluno"; }
+
+<h1>Detalhes do Aluno</h1>
+<dl class="row">
+    <dt class="col-sm-3">Nome</dt><dd class="col-sm-9">@Model.Nome</dd>
+    <dt class="col-sm-3">Email</dt><dd class="col-sm-9">@Model.Email</dd>
+    <dt class="col-sm-3">Telefone</dt><dd class="col-sm-9">@Model.Telefone</dd>
+    <dt class="col-sm-3">Endereço</dt><dd class="col-sm-9">@Model.Endereco</dd>
+    <dt class="col-sm-3">Complemento</dt><dd class="col-sm-9">@Model.Complemento</dd>
+    <dt class="col-sm-3">Bairro</dt><dd class="col-sm-9">@Model.Bairro</dd>
+    <dt class="col-sm-3">Município</dt><dd class="col-sm-9">@Model.Municipio</dd>
+    <dt class="col-sm-3">UF</dt><dd class="col-sm-9">@Model.Uf</dd>
+    <dt class="col-sm-3">CEP</dt><dd class="col-sm-9">@Model.Cep</dd>
+</dl>
+<a asp-action="Edit" asp-route-id="@Model.AlunoID" class="btn btn-warning">Editar</a>
+<a asp-action="Index" class="btn btn-secondary">Voltar</a>
